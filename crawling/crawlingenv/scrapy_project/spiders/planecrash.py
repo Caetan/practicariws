@@ -1,7 +1,6 @@
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 import json
-from elasticsearch import Elasticsearch
 from datetime import datetime
 
 
@@ -9,8 +8,6 @@ class PlanecrashSpider(CrawlSpider):
     name = "planecrash"
     allowed_domains = ["www.planecrashinfo.com"]
     start_urls = ["https://www.planecrashinfo.com/database.htm"]
-
-    client = Elasticsearch("http://localhost:9200",)
 
     rules = (
         # Rule(
@@ -49,9 +46,3 @@ class PlanecrashSpider(CrawlSpider):
         with open("../planecrashes.json", 'a+') as file:
             json.dump(json_result, file)
             file.write('\n')
-
-        # client.index(
-        #     index="planecrash",
-        #     id=accident_id,
-        #     document=result
-        # )
