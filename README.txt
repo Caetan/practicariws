@@ -4,7 +4,9 @@
 2º Crawling:
     make crawling
 
-3º Bulk de los documentos en Elasticsearch:
+Esto crea un planecrashes.json en /crawling/crawlingenv/scrapy_project/planecrashes.json con los documentos scrapeados
+
+3º Bulk de los documentos en planecrashes.json a Elasticsearch:
     make bulk
 
 4º Cliente React:
