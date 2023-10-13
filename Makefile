@@ -7,7 +7,6 @@ client:
 prepare_env:
 	cd crawling && \
 	source ./crawlingenv/bin/activate && \
-	cd ./crawlingenv && \
 	pip install -r requirements.txt
 
 crawling:
