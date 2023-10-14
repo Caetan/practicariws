@@ -30,7 +30,9 @@ Si no funciona, los paquetes necesarios para el scrapping de Python son:
 - pip install elasticsearch
 - pip install Scrapy
 
-En este caso, se pueden ejecutar los comandos del Makefile obviando la activación del venv
+(ver practicariws/crawling/requirements.txt para más dependecias)
+
+En este caso, se pueden ejecutar los comandos del Makefile obviando la activación del venv.
 
 
 ## Alternativa
