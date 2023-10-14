@@ -8,12 +8,12 @@ Configuración usada: `elasticsearch.yml`
     make prepare_env
 
 El siguiente paso de crawling lleva mucho tiempo, ya que crawlea toda la página. Puede usarse el fichero `planecrashes.json` que se proporciona ya con el contenido de la página cralewada y scrapeada.
-Para usarlo, hay que moverlo a la carpeta `practicariws/crawling/crawlingenv/scrapy_project/`. Una vez hecho, puede saltarse al paso 3.
+Para usarlo, hay que moverlo a la carpeta `crawling/crawlingenv/scrapy_project/`. Una vez hecho, puede saltarse al paso 3.
 
 2º Crawling:
     make crawling
 
-Esto crea un planecrashes.json en /crawling/crawlingenv/scrapy_project/planecrashes.json con los documentos scrapeados
+Esto crea un planecrashes.json en `crawling/crawlingenv/scrapy_project/` con los documentos scrapeados
 
 3º Bulk de los documentos en planecrashes.json a Elasticsearch:
     make bulk
@@ -30,7 +30,7 @@ Si no funciona, los paquetes necesarios para el scrapping de Python son:
 - pip install elasticsearch
 - pip install Scrapy
 
-(ver practicariws/crawling/requirements.txt para más dependecias)
+(ver crawling/requirements.txt para más dependecias)
 
 En este caso, se pueden ejecutar los comandos del Makefile obviando la activación del venv.
 
