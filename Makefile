@@ -1,8 +1,11 @@
 elasticsearch:
-	cd ../elasticsearch-8.9.2 && ./bin/elasticsearch
+	cd ../elasticsearch-8.10.3 && ./bin/elasticsearch
 
 client:
 	cd client/ && npm install && npm start
+
+create_index:
+	./index_utils.sh
 
 prepare_env:
 	cd crawling && \

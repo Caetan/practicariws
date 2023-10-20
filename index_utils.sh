@@ -39,5 +39,3 @@ curl -X PUT 'http://localhost:9200/planecrash' -H "Content-Type: application/jso
     }
   }
 }'
-
-curl -X DELETE "http://localhost:9200/planecrash"
