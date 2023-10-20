@@ -4,7 +4,7 @@ Version 8.10.3 -> https://www.elastic.co/guide/en/elasticsearch/reference/curren
 
 Configuración usada: `elasticsearch.yml`
 
-En el fichero ./index_utils.txt aparecen los comandos para la creación, el mapeo y, si es preciso, el borrado del índice necesario.
+En el fichero index_utils.txt aparecen los comandos para la creación, el mapeo y, si es preciso, el borrado del índice necesario.
 
 
 ## How to run
