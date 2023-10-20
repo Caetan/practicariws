@@ -19,6 +19,11 @@ make prepare_env
 El siguiente paso de crawling lleva mucho tiempo, ya que crawlea toda la página. Puede usarse el fichero [planecrashes.json](planecrashes.json) que se proporciona ya con el contenido de la página crawleada y scrapeada.
 Para usarlo, hay que moverlo a la carpeta [crawling/crawlingenv/scrapy_project/](crawling/crawlingenv/scrapy_project/). Una vez hecho, puede saltarse al paso 3.
 
+```
+cp planecrashes.json crawling/crawlingenv/scrapy_project/
+```
+
+
 2º Crawling:
 ```
 make crawling
@@ -26,10 +31,12 @@ make crawling
 
 Esto crea un `planecrashes.json` en [crawling/crawlingenv/scrapy_project/](crawling/crawlingenv/scrapy_project/) con los documentos scrapeados.
 
+
 3º Bulk de los documentos en `planecrashes.json` a Elasticsearch:
 ```
 make bulk
 ``````
+
 
 4º Cliente React:
 ```
