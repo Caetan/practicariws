@@ -57,8 +57,3 @@ Si no funciona, los paquetes necesarios para el scrapping de Python son:
 (ver [crawling/requirements.txt](crawling/requirements.txt) para más dependecias)
 
 En este caso, se pueden ejecutar los comandos del Makefile obviando el paso 1 y la activación del venv en los pasos 2 y 3.
-
-
-## Alternativa
-
-En caso de no funcionar la instalación, se puede usar el proyecto de la carpeta [practicariws_with_libs](practicariws_with_libs). Este proyecto es exactamente igual que el anterior, pero está pusheado el venv con las bibliotecas y dependecias usadas, por lo que no hay que instalar nada. Se puede seguir la anterior lista de pasos obviando el paso 1, que no es necesario.
