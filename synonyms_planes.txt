@@ -1,0 +1,3 @@
+aircraft, plane, airplane, aeroplane, jet
+sea, ocean, coast
+crash, accident, collision, impact

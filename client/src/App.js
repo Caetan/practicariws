@@ -48,7 +48,6 @@ const config = {
         }
       }
     },
-    // disjunctiveFacets: ["acres", "states", "date_established", "location"],
     facets: {
       aboard: {
         type: "range",
@@ -88,61 +87,6 @@ const config = {
   },
 };
 
-const SORT_OPTIONS = [
-  {
-    name: "Relevance",
-    value: []
-  },
-  {
-    name: "Title",
-    value: [
-      {
-        field: "title",
-        direction: "asc"
-      }
-    ]
-  },
-  {
-    name: "State",
-    value: [
-      {
-        field: "states",
-        direction: "asc"
-      }
-    ]
-  },
-  {
-    name: "State -> Title",
-    value: [
-      {
-        field: "states",
-        direction: "asc"
-      },
-      {
-        field: "title",
-        direction: "asc"
-      }
-    ]
-  },
-  {
-    name: "Heritage Site -> State -> Title",
-    value: [
-      {
-        field: "world_heritage_site",
-        direction: "asc"
-      },
-      {
-        field: "states",
-        direction: "asc"
-      },
-      {
-        field: "title",
-        direction: "asc"
-      }
-    ]
-  }
-];
-
 export default function App() {
   return (
     <SearchProvider config={config}>
@@ -158,16 +102,12 @@ export default function App() {
                 <Layout
                   header={
                     <SearchBox
-                      // Set debounceLength and searchAsYouType props
                       debounceLength={300}
                       searchAsYouType={true}
                     />
                   }
                   sideContent={
                     <div>
-                      {/* {wasSearched && (
-                        <Sorting label={"Sort by"} sortOptions={SORT_OPTIONS} />
-                      )} */}
                       <Facet
                         key="0"
                         field="aboard"
@@ -194,13 +134,6 @@ export default function App() {
                     />
                   }
                   bodyFooter={<Paging />}
-                // bodyHeader={
-                //   <React.Fragment>
-                //     {wasSearched && <PagingInfo />}
-                //     {wasSearched && <ResultsPerPage />}
-                //   </React.Fragment>
-                // }
-                // bodyFooter={<Paging />}
                 />
               </ErrorBoundary>
             </div>
