@@ -6,6 +6,8 @@ Configuración usada: [elasticsearch.yml](elasticsearch.yml)
 
 Para realizar el relevance feedback por sinónimos, es necesario copiar el fichero de sinónomos [synonyms_planes.txt](synonyms_planes.txt) en la configuración de Elasticsearch `elasticsearch-8.10.3/config/synonyms_planes.txt`.
 
+Una vez iniciado el servicio de Elasticsearch con la configuración indicada, se puede crear el índice y su mapeo.
+
 En el fichero [index_utils.sh](index_utils.sh) aparecen los comandos para la creación y el mapeo del índice necesario.
 ```
 make create_index
